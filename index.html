@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#12251f">
+  <meta name="description" content="Convite de casamento de Alessandra e Israel — 24 de outubro de 2026.">
+  <title>Alessandra & Israel — Save the Date</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Italiana&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%2312251f'/%3E%3Cpath d='M32 49S12 37 12 23c0-10 13-14 20-4 7-10 20-6 20 4 0 14-20 26-20 26Z' fill='%23d4af75'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="locked">
+  <div id="entrance" class="entrance" role="dialog" aria-modal="true" aria-label="Abrir convite">
+    <img src="assets/foto-4.jpeg" alt="Alessandra e Israel em Paris" class="entrance-photo">
+    <div class="entrance-shade"></div>
+    <div class="entrance-content">
+      <p class="eyebrow">SAVE THE DATE</p>
+      <h1>Alessandra <span>&</span> Israel</h1>
+      <p class="entrance-date">24 • 10 • 2026</p>
+      <button id="openInvitation" class="primary-btn" type="button">
+        <span class="play-icon">▶</span> Abrir convite
+      </button>
+      <small>Toque para entrar e ouvir nossa música</small>
+    </div>
+  </div>
+
+  <audio id="weddingMusic" loop preload="metadata">
+    <source src="assets/musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="musicToggle" class="music-toggle" type="button" aria-label="Pausar música" title="Pausar música">♫</button>
+
+  <main>
+    <section class="hero">
+      <img src="assets/foto-1.jpeg" alt="Alessandra e Israel diante do mar ao pôr do sol" class="hero-photo">
+      <div class="hero-overlay"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">O NOSSO PARA SEMPRE COMEÇA AQUI</p>
+        <h2>Alessandra <span>&</span> Israel</h2>
+        <div class="date-lockup"><b>24</b><i></i><span>OUTUBRO<br>2026</span></div>
+        <p class="hero-note">Será uma alegria ter você conosco neste dia tão especial.</p>
+      </div>
+      <a href="#historia" class="scroll-hint" aria-label="Continuar no convite">⌄</a>
+    </section>
+
+    <section id="historia" class="story section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">NOSSA HISTÓRIA</p>
+        <h2>O amor é a nossa melhor viagem</h2>
+        <p>Entre caminhos, sonhos e tantos momentos vividos, escolhemos seguir juntos para sempre.</p>
+      </div>
+      <div class="photo-collage">
+        <figure class="photo-card tall reveal"><img src="assets/foto-2.jpeg" alt="O casal em um jardim florido" loading="lazy"></figure>
+        <figure class="photo-card small reveal"><img src="assets/foto-6.jpeg" alt="O casal em um passeio de motocicleta" loading="lazy"></figure>
+        <figure class="photo-card medium reveal"><img src="assets/foto-5.jpeg" alt="Alessandra e Israel em uma celebração" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="countdown-section section">
+      <div class="countdown-photo-wrap reveal">
+        <img src="assets/foto-4.jpeg" alt="Alessandra e Israel com a Torre Eiffel ao fundo" loading="lazy">
+      </div>
+      <div class="countdown-copy reveal">
+        <p class="eyebrow">CONTAGEM REGRESSIVA</p>
+        <h2>Falta pouco para o nosso sim</h2>
+        <div id="countdown" class="countdown" aria-live="polite">
+          <div><b id="days">000</b><span>dias</span></div>
+          <div><b id="hours">00</b><span>horas</span></div>
+          <div><b id="minutes">00</b><span>min</span></div>
+          <div><b id="seconds">00</b><span>seg</span></div>
+        </div>
+        <a class="text-link" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Casamento%20Alessandra%20e%20Israel&dates=20261024T180000Z/20261024T220000Z&details=Casamento%20de%20Alessandra%20e%20Israel" target="_blank" rel="noopener">Adicionar à agenda ↗</a>
+      </div>
+    </section>
+
+    <section class="details section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">ONDE E QUANDO</p>
+        <h2>Nosso grande dia</h2>
+      </div>
+      <div class="event-grid">
+        <article class="event-card reveal">
+          <span class="event-number">01</span>
+          <p class="eyebrow">CERIMÔNIA</p>
+          <h3>Paróquia Senhor do Bonfim</h3>
+          <p class="event-time">15h</p>
+          <p>Sábado, 24 de outubro de 2026</p>
+          <a class="outline-btn" href="https://www.google.com/maps/search/?api=1&query=Paróquia+Senhor+do+Bonfim+Sergipe" target="_blank" rel="noopener">Ver no mapa ↗</a>
+        </article>
+        <article class="event-card dark reveal">
+          <span class="event-number">02</span>
+          <p class="eyebrow">RECEPÇÃO</p>
+          <h3>JNN Espaço de Festas</h3>
+          <p class="event-time">Após a cerimônia</p>
+          <p>Rua D, nº 09 • Loteamento Nosso Lar<br>Conjunto Rosa Elze • Bairro Eduardo Gomes</p>
+          <a class="outline-btn light" href="https://www.google.com/maps/search/?api=1&query=JNN+Espaço+de+Festas+Rua+D+09+Nosso+Lar+Rosa+Elze+Eduardo+Gomes" target="_blank" rel="noopener">Ver no mapa ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="rsvp section">
+      <div class="rsvp-photo reveal"><img src="assets/foto-3.jpeg" alt="Alessandra e Israel viajando juntos" loading="lazy"></div>
+      <div class="rsvp-content reveal">
+        <p class="eyebrow">VOCÊ FAZ PARTE DESTA HISTÓRIA</p>
+        <h2>Confirme sua presença</h2>
+        <p>Esperamos você para celebrar conosco. Confirme pelo WhatsApp para prepararmos tudo com carinho.</p>
+        <a class="primary-btn" href="https://wa.me/5579981713834?text=Olá%2C%20Alessandra%20e%20Israel!%20Confirmo%20minha%20presença%20no%20casamento.%20Meu%20nome%20é%3A%20" target="_blank" rel="noopener">Confirmar pelo WhatsApp</a>
+      </div>
+    </section>
+
+    <section class="gift section">
+      <div class="gift-card reveal">
+        <div>
+          <p class="eyebrow">PRESENTE</p>
+          <h2>O melhor presente é ter você conosco</h2>
+          <p>Mas, se desejar nos presentear, preparamos uma opção prática via PIX. Aponte a câmera do celular para o QR Code.</p>
+        </div>
+        <figure class="qr-wrap">
+          <img src="assets/qrcode.jpeg" alt="QR Code PIX para presentear Alessandra e Israel">
+          <figcaption>Presente via PIX</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="closing">
+      <img src="assets/foto-1.jpeg" alt="Alessandra e Israel" loading="lazy">
+      <div class="closing-overlay"></div>
+      <div class="closing-copy reveal">
+        <p>Com amor,</p>
+        <h2>Alessandra <span>&</span> Israel</h2>
+        <b>24 • 10 • 2026</b>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
